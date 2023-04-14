@@ -2,6 +2,7 @@ import { faCalendarDays, faHome, faPeopleGroup, faTrophy } from '@fortawesome/fr
 import './Sidebar.css';
 import {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 const Sidebar = (props) => {
     const {isOpen} = props;
@@ -14,19 +15,19 @@ const Sidebar = (props) => {
 
             <div id="menu">
                 <ul>
-                    <ElementoMenu label="Dashboard" icon={faHome} />
+                    <ElementoMenu link="/" label="Dashboard" icon={faHome} />
 
-                    <ElementoMenu label="Squadre" icon={faPeopleGroup}>
+                    <ElementoMenu link="/squadre" label="Squadre" icon={faPeopleGroup}>
                         <ElementoMenu label="Categorie" />
                         <ElementoMenu label="Giocatori" />
                     </ElementoMenu>
 
-                    <ElementoMenu label="Calendario" icon={faCalendarDays}>
+                    <ElementoMenu link="/calendario" label="Calendario" icon={faCalendarDays}>
                         <ElementoMenu label="Prossime" />
                         <ElementoMenu label="Archivio" />
                     </ElementoMenu>
 
-                    <ElementoMenu label="Classifica" icon={faTrophy} />
+                    <ElementoMenu link="/classifica" label="Classifica" icon={faTrophy} />
                 </ul>
             </div>
             <Versione />
@@ -37,7 +38,7 @@ const Sidebar = (props) => {
 const Versione = () => <div id="versione">v 1.0.0</div>
 
 const ElementoMenu = (props) => {
-    const {children, label, icon} = props;
+    const {children, label, icon, link} = props;
 
     const [open, setOpen] = useState(false);
 
@@ -54,8 +55,11 @@ const ElementoMenu = (props) => {
             className={liClass}
             onClick={handleClick}
         >
-            <span className="icona"><FontAwesomeIcon icon={icon} /></span> 
-            <span className="etichetta">{label}</span>
+            <Link to={link}>
+                <span className="icona"><FontAwesomeIcon icon={icon} /></span> 
+                <span className="etichetta">{label}</span>
+            </Link>
+
             {children && <ul>{children}</ul>}
         </li>
     )

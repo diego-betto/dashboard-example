@@ -1,0 +1,74 @@
+[
+    {
+        "nome": "Squadra 1",
+        "nGiocatori": 24,
+        "vRosa": 500,
+        "punti": 10
+    },
+    {
+        "nome": "Squadra 2",
+        "nGiocatori": 26,
+        "vRosa": 600,
+        "punti": 20
+    },
+    {
+        "nome": "Squadra 3",
+        "nGiocatori": 25,
+        "vRosa": 200,
+        "punti": 5
+    },
+    {
+        "nome": "Squadra 4",
+        "nGiocatori": 24,
+        "vRosa": 500,
+        "punti": 15
+    },
+    {
+        "nome": "Squadra 5",
+        "nGiocatori": 26,
+        "vRosa": 600,
+        "punti": 3
+    },
+    {
+        "nome": "Squadra 6",
+        "nGiocatori": 25,
+        "vRosa": 200,
+        "punti": 50
+    },
+    {
+        "nome": "Squadra 1",
+        "nGiocatori": 24,
+        "vRosa": 500,
+        "punti": 102
+    },
+    {
+        "nome": "Squadra 2",
+        "nGiocatori": 26,
+        "vRosa": 600,
+        "punti": 203
+    },
+    {
+        "nome": "Squadra 3",
+        "nGiocatori": 25,
+        "vRosa": 200,
+        "punti": 4
+    },
+    {
+        "nome": "Squadra 4",
+        "nGiocatori": 24,
+        "vRosa": 500,
+        "punti": 15
+    },
+    {
+        "nome": "Squadra 5",
+        "nGiocatori": 26,
+        "vRosa": 600,
+        "punti": 12
+    },
+    {
+        "nome": "Squadra 6",
+        "nGiocatori": 25,
+        "vRosa": 200,
+        "punti": 20
+    }
+]

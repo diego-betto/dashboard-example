@@ -1,6 +1,14 @@
+import FullCalendar from '@fullcalendar/react'
+import dayGridPlugin from '@fullcalendar/daygrid'
+
 const Calendario = () => {
     return (
-        <div>Calendario</div>
+        <div>
+            <FullCalendar
+                plugins={[ dayGridPlugin ]}
+                initialView="dayGridMonth"
+            />
+        </div>
     );
 }
 

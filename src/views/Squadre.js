@@ -1,4 +1,6 @@
-const dati = [
+import dati from '../data/squadre.json'
+
+/*const dati = [
     {
         nome: 'Squadra 1',
         nGiocatori: 24,
@@ -15,10 +17,13 @@ const dati = [
         vRosa: 200
     }
 ];
+*/
 
 const Squadre = () => {
     return (
         <div>
+            <h1>Squadre</h1>
+
             <table className="table table-striped table-hover">
                 <thead>
                     <tr>
@@ -26,6 +31,7 @@ const Squadre = () => {
                         <th>Nome</th>
                         <th>N. Giocatori</th>
                         <th>V. Rosa</th>
+                        <th>Punti</th>
                     </tr>
                 </thead>
 
@@ -36,6 +42,7 @@ const Squadre = () => {
                         <td>{squadra.nome}</td>
                         <td>{squadra.nGiocatori}</td>
                         <td>{squadra.vRosa}</td>
+                        <td>{squadra.punti}</td>
                     </tr>)
                     }
                     
